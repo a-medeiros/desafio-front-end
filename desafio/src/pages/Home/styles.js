@@ -9,3 +9,9 @@ export const BoxProducts = styled.div`
   justify-content: center;
   flex-wrap: wrap;
 `;
+
+export const LoadingContainer = styled.div`
+  height: 80vh;
+  display: flex;
+  align-items: center;
+`;

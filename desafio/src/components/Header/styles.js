@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   background: #f0f0f0;
@@ -14,11 +14,28 @@ export const BoxAside = styled.div`
     background: white;
     position: absolute;
     top: 0;
-    right: ${props => (props.active ? 0 : '-400px')};
+    right: ${props => (props.active ? 0 : '-500px')};
     height: 100%;
     display: flex;
     flex: 1;
-    width: 300px;
+    width: 400px;
     transition: 0.7s;
     z-index: 1;
+`;
+
+export const CloseCartContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const CartContainer = styled.div`
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  aligm-items: center;
+`;
+
+export const TotalContainer = styled.div`
+  display: flex;
+  justify-content: center;
 `;
